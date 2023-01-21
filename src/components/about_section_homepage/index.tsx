@@ -37,7 +37,7 @@ const AboutSectionHomepage = () => {
               })}
               variant="h2"
             >
-              Who are we?
+              Who are we ?
             </Typography>
             <Typography
               sx={(theme: Theme) => ({

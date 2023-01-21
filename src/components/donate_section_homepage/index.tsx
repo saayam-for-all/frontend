@@ -3,7 +3,6 @@ import {
   Box,
   Button,
   Grid,
-  Icon,
   IconButton,
   Stack,
   Theme,
@@ -20,7 +19,7 @@ const DonateSectionHomepage = () => {
         pt={8}
         pb={8}
         pr={5}
-        spacing={3}
+        spacing={15}
         direction="row"
         justifyContent={'center'}
         container
@@ -93,7 +92,7 @@ const DonateSectionHomepage = () => {
           <Button
             endIcon={<ArrowForward />}
             sx={(theme: Theme) => ({
-              mt: '1rem',
+              mt: '2rem',
             })}
             variant="outlined"
             color="primary"

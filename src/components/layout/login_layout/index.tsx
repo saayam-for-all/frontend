@@ -7,7 +7,7 @@ const LoginLayout = (props: any) => {
   return (
     <>
       <Topbar />
-      <Box sx={{ marginTop: '7rem' }}>{children}</Box>
+      <Box sx={{ marginTop: '6rem' }}>{children}</Box>
     </>
   );
 };

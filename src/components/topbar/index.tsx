@@ -22,17 +22,22 @@ const Topbar = () => {
           </IconButton>
         </Box>
         <Stack direction="row" spacing={3}>
+          <Link style={topbarStyles.link} href={'/'}>
+            <Typography sx={topbarStyles.linkText} variant="subtitle1">
+              Home
+            </Typography>
+          </Link>
           <Link style={topbarStyles.link} href={'/about'}>
             <Typography sx={topbarStyles.linkText} variant="subtitle1">
               About
             </Typography>
           </Link>
-          <Link style={topbarStyles.link} href={'/about'}>
+          <Link style={topbarStyles.link} href={'/donate'}>
             <Typography sx={topbarStyles.linkText} variant="subtitle1">
               Donate
             </Typography>
           </Link>
-          <Link style={topbarStyles.link} href={'/about'}>
+          <Link style={topbarStyles.link} href={'/get-in-touch'}>
             <Typography sx={topbarStyles.linkText} variant="subtitle1">
               Get in touch
             </Typography>

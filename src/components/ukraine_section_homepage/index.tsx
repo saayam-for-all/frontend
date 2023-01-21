@@ -47,22 +47,21 @@ const ukraineSectionHomepage = () => {
         <Grid item sm={12} md={6}>
           <Stack
             alignItems={'center'}
-            spacing={3}
+            spacing={1}
             sx={{
               mt: '4rem',
             }}
             direction={'row'}
           >
-            <Image alt="" src={'/images/ukraine.png'} height={80} width={150} />
             <Typography color={'primary'} variant="h2" fontWeight={600}>
               We are with Ukraine
             </Typography>
+            <Image alt="" src={'/images/ukraine.png'} height={80} width={150} />
           </Stack>
           <Typography
             sx={(theme: Theme) => ({
               fontWeight: 400,
               mt: '3rem',
-              pl: '1rem',
             })}
             variant="body2"
             align="justify"
