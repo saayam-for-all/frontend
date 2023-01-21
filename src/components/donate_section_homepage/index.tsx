@@ -1,6 +1,16 @@
-import { Box, Button, Grid, Stack, Theme, Typography } from '@mui/material';
+import {
+  Avatar,
+  Box,
+  Button,
+  Grid,
+  Icon,
+  IconButton,
+  Stack,
+  Theme,
+  Typography,
+} from '@mui/material';
 import { donateSectionStyle } from '@styles';
-import { ArrowForward } from '@mui/icons-material';
+import { ArrowForward, VolunteerActivism } from '@mui/icons-material';
 import Image from 'next/image';
 
 const DonateSectionHomepage = () => {
@@ -16,32 +26,53 @@ const DonateSectionHomepage = () => {
         container
       >
         <Grid item sm={12} md={6}>
-          <Image
-            alt=""
-            style={{
-              borderRadius: '15px',
-              margin: 'auto',
+          <IconButton
+            sx={(theme: Theme) => ({
               display: 'block',
-            }}
-            src={'/images/poverty.jpg'}
-            height={580}
-            width={850}
-          />
+              ml: 'auto',
+              mr: 'auto',
+              mt: '15rem',
+              color: theme.palette.secondary.main,
+            })}
+          >
+            <VolunteerActivism sx={{ transform: 'scale(900%)' }} />
+          </IconButton>
         </Grid>
         <Grid item sm={12} md={6}>
           <Stack direction="column" spacing={3}>
             <Typography
               sx={(theme: Theme) => ({
-                color: theme.palette.common.white,
-                fontWeight: 400,
+                fontWeight: 600,
+                color: theme.palette.primary.main,
               })}
               variant="h2"
             >
-              Who are we?
+              Volunteers at SAAYAM
             </Typography>
+            <Stack direction={'row'} spacing={3}>
+              <Avatar
+                sx={{ height: '10rem', width: '10rem' }}
+                alt="Remy Sharp"
+                src={'/placeholders/pp1.jpg'}
+              />
+              <Avatar
+                sx={{ height: '10rem', width: '10rem' }}
+                alt="Remy Sharp"
+                src={'/placeholders/pp2.jpg'}
+              />
+              <Avatar
+                sx={{ height: '10rem', width: '10rem' }}
+                alt="Remy Sharp"
+                src={'/placeholders/pp3.jpg'}
+              />
+              <Avatar
+                sx={{ height: '10rem', width: '10rem' }}
+                alt="Remy Sharp"
+                src={'/placeholders/pp5.jpg'}
+              />
+            </Stack>
             <Typography
               sx={(theme: Theme) => ({
-                color: theme.palette.common.white,
                 fontWeight: 400,
               })}
               variant="body1"
@@ -62,17 +93,12 @@ const DonateSectionHomepage = () => {
           <Button
             endIcon={<ArrowForward />}
             sx={(theme: Theme) => ({
-              mt: '5rem',
-              color: '#f1f1f2',
-              borderColor: '#f1f1f2',
-              '&:hover': {
-                backgroundColor: '#f1f1f2',
-                color: theme.palette.secondary.main,
-              },
+              mt: '1rem',
             })}
             variant="outlined"
+            color="primary"
           >
-            Learn More
+            Join Us
           </Button>
         </Grid>
       </Grid>

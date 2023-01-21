@@ -54,7 +54,7 @@ const ukraineSectionHomepage = () => {
             direction={'row'}
           >
             <Image alt="" src={'/images/ukraine.png'} height={80} width={150} />
-            <Typography variant="h4" fontWeight={600}>
+            <Typography color={'primary'} variant="h2" fontWeight={600}>
               We are with Ukraine
             </Typography>
           </Stack>
