@@ -2,7 +2,6 @@ import { Theme } from '@mui/material';
 
 export const ukraineSectionRoot = (theme: Theme) => ({
   width: '100%',
-  height: 'auto',
+  height: '70vh',
   backgroundColor: 'transparent',
-  marginTop: '6rem',
 });

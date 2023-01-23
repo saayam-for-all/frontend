@@ -8,19 +8,20 @@ import {
   Theme,
   Typography,
 } from '@mui/material';
-import { donateSectionStyle } from '@styles';
+import { volunteerSectionStyle } from '@styles';
 import { ArrowForward, VolunteerActivism } from '@mui/icons-material';
 import Image from 'next/image';
 
-const DonateSectionHomepage = () => {
+const VolunteerSectionHomepage = () => {
   return (
-    <Box sx={donateSectionStyle.donateSectionRoot}>
+    <Box sx={volunteerSectionStyle.donateSectionRoot}>
       <Grid
         pt={8}
         pb={8}
         pr={5}
         spacing={15}
         direction="row"
+        alignItems={'center'}
         justifyContent={'center'}
         container
       >
@@ -30,7 +31,6 @@ const DonateSectionHomepage = () => {
               display: 'block',
               ml: 'auto',
               mr: 'auto',
-              mt: '15rem',
               color: theme.palette.secondary.main,
             })}
           >
@@ -48,24 +48,24 @@ const DonateSectionHomepage = () => {
             >
               Volunteers at SAAYAM
             </Typography>
-            <Stack direction={'row'} spacing={3}>
+            <Stack direction={'row'} spacing={1}>
               <Avatar
-                sx={{ height: '10rem', width: '10rem' }}
+                sx={{ height: '5rem', width: '5rem' }}
                 alt="Remy Sharp"
                 src={'/placeholders/pp1.jpg'}
               />
               <Avatar
-                sx={{ height: '10rem', width: '10rem' }}
+                sx={{ height: '5rem', width: '5rem' }}
                 alt="Remy Sharp"
                 src={'/placeholders/pp2.jpg'}
               />
               <Avatar
-                sx={{ height: '10rem', width: '10rem' }}
+                sx={{ height: '5rem', width: '5rem' }}
                 alt="Remy Sharp"
                 src={'/placeholders/pp3.jpg'}
               />
               <Avatar
-                sx={{ height: '10rem', width: '10rem' }}
+                sx={{ height: '5rem', width: '5rem' }}
                 alt="Remy Sharp"
                 src={'/placeholders/pp5.jpg'}
               />
@@ -105,4 +105,4 @@ const DonateSectionHomepage = () => {
   );
 };
 
-export default DonateSectionHomepage;
+export default VolunteerSectionHomepage;

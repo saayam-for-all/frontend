@@ -5,6 +5,7 @@ export const rootMin = (theme: Theme) => ({
   border: 'none',
   boxShadow: 'none',
   backgroundColor: 'transparent',
+  position: 'relative',
 });
 
 export const toolbar = {

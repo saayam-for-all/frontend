@@ -12,7 +12,17 @@ import { topbarStyles } from '@styles';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const Topbar = () => {
+interface ITopBarProps {
+  showLogin: (value: boolean) => void;
+}
+
+const Topbar = (props: ITopBarProps) => {
+  const { showLogin } = props;
+
+  const handleLoginClick = () => {
+    showLogin(true);
+  };
+
   return (
     <AppBar position="relative" sx={topbarStyles.rootMin}>
       <Toolbar sx={topbarStyles.toolbar}>
@@ -46,6 +56,7 @@ const Topbar = () => {
             sx={{ width: '6rem', fontWeight: 700 }}
             size="small"
             variant="outlined"
+            onClick={handleLoginClick}
           >
             Login
           </Button>

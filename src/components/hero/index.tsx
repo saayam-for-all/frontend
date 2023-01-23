@@ -3,14 +3,10 @@ import { heroStyles } from '@styles';
 import Image from 'next/image';
 const HeroSection = () => {
   return (
-    <>
-      <Grid spacing={3} container sx={{ height: '70vh' }}>
-        <Grid item md={6} sm={12}>
-          <Stack
-            sx={{ marginTop: '5rem' }}
-            direction={'column'}
-            alignItems="center"
-          >
+    <Box sx={heroStyles.root}>
+      <Grid spacing={3} alignItems="center" container sx={{ height: '100%' }}>
+        <Grid item lg={6} md={12} sm={12}>
+          <Stack direction={'column'} alignItems="center">
             <Typography color={'secondary'} variant="h2" fontWeight={700}>
               SAAYAM
             </Typography>
@@ -24,7 +20,7 @@ const HeroSection = () => {
                 paddingBottom: '2rem',
               }}
             >
-              <Typography textAlign="center" variant="body1">
+              <Typography textAlign="center" align="justify" variant="body1">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry&apos;s standard
                 dummy text ever since the 1500s, when an unknown printer took a
@@ -36,18 +32,18 @@ const HeroSection = () => {
             <Button variant="contained">Donate Now</Button>
           </Stack>
         </Grid>
-        <Grid item md={6} sm={12}>
-          {/* <Box sx={heroStyles.heroImage}></Box> */}
-          <Image
-            alt=""
-            style={{ borderRadius: '15px' }}
-            src={'/images/hero.png'}
-            height={580}
-            width={850}
-          />
+        <Grid item lg={6} md={12} sm={12}>
+          <Box component={'div'} sx={heroStyles.heroImage}>
+            <Image
+              alt=""
+              style={{ borderRadius: '15px' }}
+              src={'/images/hero.png'}
+              fill={true}
+            />
+          </Box>
         </Grid>
       </Grid>
-    </>
+    </Box>
   );
 };
 

@@ -1,8 +1,10 @@
 import { Theme } from '@mui/material';
 
 export const aboutSectionRoot = (theme: Theme) => ({
-  width: '100%',
-  height: 'auto',
+  width: '100vw',
+  height: '70vh',
   backgroundColor: theme.palette.secondary.dark,
-  marginTop: '6rem',
+  mt: '4rem',
+  pb: 5,
+  pt: 5,
 });

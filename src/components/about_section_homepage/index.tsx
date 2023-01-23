@@ -7,33 +7,38 @@ const AboutSectionHomepage = () => {
   return (
     <Box sx={aboutSectionStyle.aboutSectionRoot}>
       <Grid
-        pt={8}
-        pb={8}
-        pr={5}
-        spacing={3}
         direction="row"
-        justifyContent={'center'}
+        alignItems={'center'}
         container
+        sx={{ height: '100%', width: '100%' }}
       >
-        <Grid item sm={12} md={6}>
-          <Image
-            alt=""
-            style={{
-              borderRadius: '15px',
-              margin: 'auto',
+        <Grid item lg={6} sm={12}>
+          <Box
+            sx={{
+              height: '400px',
+              width: '600px',
               display: 'block',
+              position: 'relative',
+              ml: 'auto',
+              mr: 'auto',
             }}
-            src={'/images/poverty.jpg'}
-            height={580}
-            width={850}
-          />
+          >
+            <Image
+              alt=""
+              style={{
+                borderRadius: '15px',
+              }}
+              src={'/images/poverty.jpg'}
+              fill={true}
+            />
+          </Box>
         </Grid>
-        <Grid item sm={12} md={6}>
-          <Stack direction="column" spacing={3}>
+        <Grid lg={6} item sm={12}>
+          <Box sx={{ position: 'relative', width: '90%' }}>
             <Typography
               sx={(theme: Theme) => ({
                 color: theme.palette.common.white,
-                fontWeight: 400,
+                fontWeight: 600,
               })}
               variant="h2"
             >
@@ -58,7 +63,8 @@ const AboutSectionHomepage = () => {
               publishing software like Aldus PageMaker including versions of
               Lorem Ipsum.
             </Typography>
-          </Stack>
+          </Box>
+
           <Button
             endIcon={<ArrowForward />}
             sx={(theme: Theme) => ({

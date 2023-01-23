@@ -41,43 +41,44 @@ const ukraineSectionHomepage = () => {
         pl={5}
         spacing={3}
         direction="row"
+        alignItems={'center'}
         justifyContent={'center'}
         container
       >
-        <Grid item sm={12} md={6}>
-          <Stack
-            alignItems={'center'}
-            spacing={1}
-            sx={{
-              mt: '4rem',
-            }}
-            direction={'row'}
-          >
-            <Typography color={'primary'} variant="h2" fontWeight={600}>
-              We are with Ukraine
+        <Grid item lg={6} sm={12}>
+          <Box sx={{ postion: 'relative', width: '90%' }}>
+            <Stack alignItems={'center'} spacing={1} direction={'row'}>
+              <Typography color={'primary'} variant="h2" fontWeight={600}>
+                We are with Ukraine
+              </Typography>
+              <Image
+                alt=""
+                src={'/images/ukraine.png'}
+                height={80}
+                width={150}
+              />
+            </Stack>
+            <Typography
+              sx={(theme: Theme) => ({
+                fontWeight: 400,
+              })}
+              variant="body2"
+              align="justify"
+            >
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry&apos;s standard dummy
+              text ever since the 1500s, when an unknown printer took a galley
+              of type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
             </Typography>
-            <Image alt="" src={'/images/ukraine.png'} height={80} width={150} />
-          </Stack>
-          <Typography
-            sx={(theme: Theme) => ({
-              fontWeight: 400,
-              mt: '3rem',
-            })}
-            variant="body2"
-            align="justify"
-          >
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&apos;s standard dummy
-            text ever since the 1500s, when an unknown printer took a galley of
-            type and scrambled it to make a type specimen book. It has survived
-            not only five centuries, but also the leap into electronic
-            typesetting, remaining essentially unchanged. It was popularised in
-            the 1960s with the release of Letraset sheets containing Lorem Ipsum
-            passages, and more recently with desktop publishing software like
-            Aldus PageMaker including versions of Lorem Ipsum.
-          </Typography>
+          </Box>
         </Grid>
-        <Grid item sm={12} md={6}>
+        <Grid item lg={6} sm={12}>
           <Box pr={3}>
             <ImageList
               sx={{
