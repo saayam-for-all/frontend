@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <Box sx={heroStyles.root}>
       <Grid spacing={3} alignItems="center" container sx={{ height: '100%' }}>
-        <Grid item lg={6} md={12} sm={12}>
+        <Grid item xs={6}>
           <Stack direction={'column'} alignItems="center">
             <Typography color={'secondary'} variant="h2" fontWeight={700}>
               SAAYAM
@@ -15,9 +15,7 @@ const HeroSection = () => {
             </Typography>
             <Box
               sx={{
-                padding: '8rem',
-                paddingTop: '1rem',
-                paddingBottom: '2rem',
+                padding: '1rem',
               }}
             >
               <Typography textAlign="center" align="justify" variant="body1">
@@ -32,7 +30,7 @@ const HeroSection = () => {
             <Button variant="contained">Donate Now</Button>
           </Stack>
         </Grid>
-        <Grid item lg={6} md={12} sm={12}>
+        <Grid item xs={6}>
           <Box component={'div'} sx={heroStyles.heroImage}>
             <Image
               alt=""
