@@ -7,6 +7,7 @@ export const heroImage = () => ({
   mr: 'auto',
 });
 
+
 export const root = {
   height: '80vh',
 };
